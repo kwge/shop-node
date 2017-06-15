@@ -20,8 +20,8 @@ app.get('*', function(req, res){
   res.sendFile('index.html', {root: '.'});
 });
 
-// // app.get('*', serveStatic('src'));
-// app.use('*', express.static(__dirname + '/src'));
+// // app.get('*', serveStatic('public'));
+// app.use('*', express.static(__dirname + '/public'));
 
 // Tell the app to listen for requests on port 3000
 app.listen(3000, function () {
